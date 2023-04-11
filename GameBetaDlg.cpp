@@ -307,7 +307,7 @@ void CGameBetaDlg::OnBnClickedBut2()
 		}
 		//datora gajems
 		if (m_Area > 5) {
-			m_Area = (logika(m_Area));
+			if (m_Area % 2 == 0) { m_Area = (logika(m_Area)); }
 			if (m_gajeni % 2 == 0) {
 				m_spel1 = m_Area;
 			}
@@ -449,7 +449,7 @@ void CGameBetaDlg::OnBnClickedBut3()
 		}
 		//datora gajens
 		if (m_Area > 5) {
-			m_Area = (logika(m_Area));
+			if (m_Area % 3 == 0) { m_Area = (logika(m_Area)); }
 			if (m_gajeni % 2 == 0) {
 				m_spel1 = m_Area;
 			}
