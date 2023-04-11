@@ -333,7 +333,7 @@ void CGameBetaDlg::OnBnClickedBut2()
 				}
 				m_Min5 = m_Area - 5;
 				m_str_min5 = (_T("Var"));
-				m_gajeni++;
+				if (m_Area % 2 == 0) { m_gajeni++; }
 				UpdateData(FALSE);
 
 			}
@@ -475,7 +475,7 @@ void CGameBetaDlg::OnBnClickedBut3()
 				}
 				m_Min5 = m_Area - 5;
 				m_str_min5 = (_T("Var"));
-				m_gajeni++;
+				if (m_Area % 3 == 0) { m_gajeni++; }
 				UpdateData(FALSE);
 
 			}
